@@ -9,25 +9,54 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Document</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/img3.jpeg" class="d-block w-100" alt="...">
+                <div id="text-wrapper">
+                    <h1 class="animate__animated animate__fadeInDown">Nam libero tempore</h1>
+                    <p class="animate__animated animate__fadeInUp">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+                    <a class="animate__animated animate__fadeInUp" href="" id="button">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img2.jpeg" class="d-block w-100" alt="...">
+                <div id="text-wrapper">
+                    <h1 class="animate__animated animate__fadeInDown">Nam libero tempore</h1>
+                    <p class="animate__animated animate__fadeInUp">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+                    <a class="animate__animated animate__fadeInUp" href="" id="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-    <nav id="navbar-example2" class="navbar navbar-light px-3">
+    <nav id="navbar-example2" class="navbar navbar-light px-3 ">
         <a id="navbar-brand2" class="navbar-brand" href="">BizPage</a>
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">HOME</a>
+                <a class="nav-link" href="#carouselExampleControls">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">ABOUT</a>
+                <a class="nav-link" href="#scrollspyHeading1">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">SERVICES</a>
+                <a class="nav-link" href="#scrollspyHeading2">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading4">PORTFOLIO</a>
+                <a class="nav-link" href="#scrollspyHeading3">PORTFOLIO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#scrollspyHeading4">TEAM</a>
@@ -47,40 +76,12 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading5">BLOG</a>
+                <a class="nav-link" href="#scrollspyHeading5">CONTACT</a>
             </li>
         </ul>
     </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/img3.jpeg" class="d-block w-100" alt="...">
-                <div id="text-wrapper">
-                    <h1>Nam libero tempore</h1>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
-                    <a href="" id="button">Get Started</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/img2.jpeg" class="d-block w-100" alt="...">
-                <div id="text-wrapper">
-                    <h1>Nam libero tempore</h1>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
-                    <a href="" id="button">Get Started</a>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <div class="scrollspy-example" tabindex="0">
         <section id="scrollspyHeading1">
             <div class="container">
                 <div class="row">
@@ -106,16 +107,74 @@
             </div>
         </section>
 
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p><br></p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p><br><br><br><br><br></p>
+        <h4 id="scrollspyHeading2">ABOUT US</h4>
+        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamco laborisMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+        <h4 id="scrollspyHeading3">SERVICES</h4>
+        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamcoMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex eai ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
         <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p><br><br><br><br><br></p>
+        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exeMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex earcitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea</p>
         <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p><br><br><br><br><br></p>
+        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam,
+            quis nostrud exerMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaMinim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex eacitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
     </div>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+                document.getElementById("navbar-example2").style.background = "rgba(0, 0, 0, 0.9)";
+                document.getElementById("navbar-example2").style.height = "65px";
+                document.getElementById("navbar-example2").style.height = "65px";
+            } else {
+                document.getElementById("navbar-example2").style.background = "none";
+                document.getElementById("navbar-example2").style.height = "85px";
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
