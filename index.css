@@ -20,6 +20,11 @@
         padding-bottom: 0px
     }
     
+    .nav-link:hover {
+        color: #18d26e;
+        ;
+    }
+    
     .nav-link {
         color: #fff;
         align-items: center;
@@ -112,4 +117,38 @@
         margin-bottom: 0;
         padding: 0;
         margin: 0 0 30px 0;
+    }
+    
+    @media (max-width: 1000px) {
+        .nav-pills {
+            position: fixed;
+            top: 80px;
+            left: 100px;
+            width: 180px;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.9);
+            transform: scaleY(0);
+            transform-origin: top;
+        }
+        #navbar-example2:hover .nav-pills {
+            transform: scaleY(1);
+            transform-origin: top;
+            transition: 1000ms;
+        }
+        .carousel-item #text-wrapper {
+            top: 18%;
+            left: 10%;
+            width: 80%;
+        }
+        #text-wrapper h1 {
+            margin-bottom: 10px;
+            font-size: 38px;
+            font-weight: 600;
+        }
+        #navbar-brand2::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f0d7";
+            color: #18d26e;
+        }
     }
